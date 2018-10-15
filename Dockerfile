@@ -1,4 +1,4 @@
-FROM mycroft1891/ruby-node:2-8
+FROM mycroft1891/ruby-node:latest
 
 RUN gem install github-pages
 
