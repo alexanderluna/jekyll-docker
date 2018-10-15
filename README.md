@@ -1,11 +1,17 @@
-# Jekyll and Docker
+# Jekyll Docker
 
 Jekyll and Yarn in a single image ☁️ 🖋
 
+## Installing
+
+```bash
+docker pull mycroft1891/jekyll-github
+```
+
 ## Why Jekyll and Yarn
 
-I usually run a couple node development modules in my jekyll projects for 
-image resizing for example. This image build on a previous image which already
+I usually run a couple node development modules in my jekyll projects for
+image resizing for example. This image builds on a previous image which already
 has ruby, node and yarn installed: **mycroft1891/ruby-node:2-8**
 
 ## How it works
@@ -54,6 +60,6 @@ services:
     ports:
       - '80:4000'
 
-volumes: 
+volumes:
   ruby_bundle:
 ```
