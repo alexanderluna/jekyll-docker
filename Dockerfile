@@ -1,6 +1,7 @@
 FROM mycroft1891/ruby-node:latest
 
-RUN gem install github-pages
+RUN gem install github-pages \
+  && apk add --no-cache imagemagick
 
 EXPOSE 4000
 
